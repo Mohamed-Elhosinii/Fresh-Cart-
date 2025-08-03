@@ -1,0 +1,47 @@
+@import "tailwindcss";
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+
+@layer base {
+}
+
+@theme {
+  --color-mainColor: #4fa74f;
+}
+
+@layer components {
+  .form-control {
+    @apply p-2 text-black border border-gray-400 rounded-lg w-full my-2 focus:outline-0;
+  }
+  .btn {
+    @apply py-2 px-4 rounded-lg border border-black/50 text-xl font-medium cursor-pointer bg-gray-200 hover:bg-gray-400;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto;
+  }
+}
+
+/* CategorySlider.css */
+
+.custom-swiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #4fa74f;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 5px !important;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #2563eb; /* Active dot color (blue) */
+}
+
+/* Optional: Reduce visible bullets to max 2 */
+.custom-swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
